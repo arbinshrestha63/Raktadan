@@ -1,0 +1,47 @@
+#full{
+    width: 100%;
+    height: auto;
+}
+#inner_full{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    
+}
+#header{
+   position: absolute;
+    width: 80%;
+    height: 80px;
+    background-color: rgb(68,2,2);
+    color: white;
+    border-radius: 50px;
+    font-size: 30px;
+    
+}
+#body{
+    position: absolute;
+    width: 100%;
+    height: 400px;
+}
+#footer{
+    position: fixed;
+    bottom: 0;
+    width: 80%;
+    height: 50px;
+    background-color: rgb(68, 2, 2);
+    color: white;
+    border-radius: 50px;
+    font-size: 15px;
+}
+.background-image {
+    background-image: url("../image/blood.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 95vh;
+    background-color: black;
+}
+
+
+
+
