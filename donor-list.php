@@ -101,9 +101,9 @@ session_start();
                         <td><center><b><u>Name</u></b></center></td>
                         <td><center><b><u>Father's Name</u></b></center></td>
                         <td><center><b><u>Address</u></b></center></td>
+                        <td><center><b><u>Quantity</u></b></center></td>
                         <td><center><b><u>Age</u></b></center></td>
                         <td><center><b><u>Select Blood Group</u></b></center></td>
-                        <td><center><b><u>Quantity</u></b></center></td>
                         <td><center><b><u>E-mail</u></b></center></td>
                         <td><center><b><u>Mobile Number</u></b></center></td>
                     </tr>
