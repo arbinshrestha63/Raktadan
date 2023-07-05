@@ -114,6 +114,7 @@ session_start();
                     while($r1=$q->fetch(PDO::FETCH_OBJ))
                     {
                         ?>
+                
                         <tr>
                         <td><center><font color="black"><?=$r1->name; ?></font></center></td>
                         <td><center><font color="black"><?=$r1->fname; ?></font></center></td>
@@ -126,6 +127,7 @@ session_start();
                       
 
                      </tr>
+                    
                         <?php
                     }
                     ?>
