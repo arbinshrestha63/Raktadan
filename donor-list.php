@@ -34,7 +34,8 @@ session_start();
 
         #form {
         width: 95%;
-        height: 100%;
+        height: 350px;
+        overflow: auto;
         background-color: rgba(68, 2, 2, 0.7);
         color: white;
         border-radius: 10px;
@@ -107,6 +108,7 @@ session_start();
                         <td><center><b><u>E-mail</u></b></center></td>
                         <td><center><b><u>Mobile Number</u></b></center></td>
                     </tr>
+            </div>
                     <?php
                     $q=$db->query("SELECT * FROM donor_registration");
                     while($r1=$q->fetch(PDO::FETCH_OBJ))
