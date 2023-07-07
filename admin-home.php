@@ -44,12 +44,45 @@ session_start();
             display: inline-block;
             margin-bottom: 15px;
         }
+
         ul li a{
             text-decoration: none;
             color:  rgb(68, 2, 2);
         }
+
+        .welcome-heading{
+            animation: fadeIn 2s ease-in-out;
+            opacity: 1;
+        }
+
+        @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(-20px); /* Move up by 20px */
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0); /* Move back to the original position */
+        }
+        }
+
+        .fade-in-animation {
+            opacity: 1;
+            animation: fade-in 2s ease-in-out forwards;
+        }
+
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+            
         
-       
 
 
     </style>
@@ -80,16 +113,16 @@ session_start();
                 }
                 ?>
                 <br><br>
-                <h1 align="center" style="color: white; margin-top: 50px;">Welcome Admin</h1>
+                <h1 class="welcome-heading" align="center" style="color: white; margin-top: 50px; font-size: 50px;">Welcome</h1>
 
-                <br><br><br><br>
+                <br><br><br>
             
                
                 <ul style="margin-left: -60px;">
-                    <li><a href="donor-red.php">Donor Registration</a></li>
-                    <li><a href="donor-list.php">Donor List</a></li>
-                    <li><a href="request.php">Request</a></li>
-                    <li><a href="stoke-blood-list.php">Stoke Blood List</a></li>
+                    <li class="fade-in-animation"><a href="donor-red.php">Donor Registration</a></li>
+                    <li class="fade-in-animation"><a href="donor-list.php">Donor List</a></li>
+                    <li class="fade-in-animation"><a href="request.php">Request</a></li>
+                    <li class="fade-in-animation"><a href="stoke-blood-list.php">Stoke Blood List</a></li>
                     
             </ul>
             
