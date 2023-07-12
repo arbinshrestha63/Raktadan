@@ -1,8 +1,7 @@
 <?php
 include('register.php');
-session_start();
 
-$success_message = ""; // Initialize the success message variable
+
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Retrieve user inputs from the form
@@ -18,27 +17,30 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                   VALUES (:first_name, :last_name, :email, :username, :password)";
         $stmt = $db->prepare($query);
 
+    
         // Bind the parameters
         $stmt->bindParam(':first_name', $first_name);
         $stmt->bindParam(':last_name', $last_name);
         $stmt->bindParam(':email', $email);
         $stmt->bindParam(':username', $username);
         $stmt->bindParam(':password', $password);
-
+    
         // Execute the statement
-        $stmt->execute();
-
-        // Registration successful
-        $success_message = "Sign up successful!"; // Set the success message
-
-        // Redirect to index.php after a few seconds
-        header("Refresh: 1; URL=index.php"); // Change "index.php" to the desired page
-        exit();
-    } catch (PDOException $e) {
+        if ($stmt->execute()) {
+            echo "<script>alert('Register Successful'); window.location.href = 'index.php';</script>";
+        } else {
+            echo "<script>alert('Register Unsuccessful');</script>";
+        }
+    }
+    
+       
+    catch (PDOException $e) {
         // Registration failed
         echo "Signup failed. Please try again.";
-    }
-}
+    }   
+} 
+   
+
 ?>
 
 <!DOCTYPE html>
