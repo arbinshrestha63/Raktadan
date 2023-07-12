@@ -48,11 +48,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <title>Signup</title>
     <link rel="stylesheet" type="text/css" href="css/signup.css">
+    <style>
+        body{
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
     <form class="main" method="POST" action="">
         <section>
-            <div style="margin-bottom: 29px; height: 312px; width: 495px;">
+            <div style="margin-bottom: 30px; height: 315px; width: 490px;">
                 <p class="head">SIGN UP</p>
                 <?php if (!empty($success_message)): ?>
                     <p style="color: green;"><?php echo $success_message; ?></p>

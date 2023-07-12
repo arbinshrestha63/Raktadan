@@ -51,7 +51,7 @@ session_start();
         }
 
         .welcome-heading{
-            animation: fadeIn 2s ease-in-out;
+            animation: fadeIn 1s ease-in-out;
             opacity: 1;
         }
 
@@ -68,7 +68,7 @@ session_start();
 
         .fade-in-animation {
             opacity: 1;
-            animation: fade-in 2s ease-in-out forwards;
+            animation: fade-in 1s ease-in-out forwards;
         }
 
         @keyframes fade-in {
